@@ -1,7 +1,8 @@
 # Basic git workflow
-## Cloning the repository
 
 The purpose of this document is to provide a basic view of the source control philosofy for software development being agnostic and valid for all projects.
+
+## Cloning the repository
 
 Git is a distributed version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers.
 
