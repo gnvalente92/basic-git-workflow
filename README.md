@@ -1,5 +1,8 @@
 # Basic git workflow
 ## Cloning the repository
+
+The purpose of this document is to provide a basic view of the source control philosofy for software development being agnostic and valid for all projects.
+
 Git is a distributed version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers.
 
 Changes to any code or artefacts must never be done through the UI of whatever git provider being used, as it harms good practices of software development using source control systems.
@@ -10,7 +13,6 @@ The changes to project artefacts must be done on the local machine and the first
 git clone <REPOSITORY_URL>
 ```
 ## Work on the code
-The purpose of this document is to provide a basic view of the source control philosofy for software development being agnostic and valid for all projects.
 
 ### Create a new branch
 Before modifying any artefact, the first step is to create a new branch (example branch names: feature/implement-python-container or fix/change-encryption-keys-address) to make the changes in.
@@ -24,7 +26,8 @@ git status
 ```
 The output will be sonething like in the screenshot below.
 
-![One change](./resources/one_change.png)
+![One change](https://raw.githubusercontent.com/gnvalente92/basic-git-workflow/master/resources/one_change.png)
+
 
 To view the modifications to a file tracked with git run:
 ```sh
@@ -37,7 +40,7 @@ After doing all desired modifications, it is necessary to stage the files for co
 
 Running a `git status` again will show all modifications, similar to what is in the screenshot below.
 
-![Multiple changes](./resources/multiple_changes.png)
+![Multiple changes](https://raw.githubusercontent.com/gnvalente92/basic-git-workflow/master/resources/multiple_changes.png)
 
 To stage one of the files untracked or not staged for commit run (files that should be pushed to the remote repository):
 
@@ -47,7 +50,7 @@ git add <FILE_TO_STAGE>
 
 After adding the files that are to be pushed to the remote server, the result of a `git status` will be something similar to the screenshot below.
 
-![Tracked changes](./resources/tracked_changes.png)
+![Tracked changes](https://raw.githubusercontent.com/gnvalente92/basic-git-workflow/master/resources/tracked_changes.png)
 
 It is also possible to add all files for staging:
 
